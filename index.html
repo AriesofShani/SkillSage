@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>E-Learning Website</title>
+</head>
+
+<body class="bg-secondary-subtle">
+
+    <!-- Navigation Bar -->
+    <section class="navbar-bg">
+        <nav class="navbar navbar-expand-lg container-fluid shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand w-25" href="#"><img src="/assets/SkillSage-logos_transparent.png" alt=""
+                        class="img-fluid w-75"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="fa-solid fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-auto me-2 mb-2 mb-lg-0 fs-3 gap-lg-3 gap-md-1 gap-sm-0">
+                        <li class="nav-item nav-hover rounded">
+                            <a class="nav-link active text-white" href="#">Home</a>
+                        </li>
+                        <li class="nav-item nav-hover rounded">
+                            <a class="nav-link text-white" href="#">Courses</a>
+                        </li>
+                        <li class="nav-item nav-hover rounded">
+                            <a class="nav-link text-white" href="#">Login</a>
+                        </li>
+                        <li class="nav-item nav-hover rounded">
+                            <a class="nav-link text-white" href="#">Register</a>
+                        </li>
+                        <li class="nav-item nav-hover rounded">
+                            <a class="nav-link text-white" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item nav-hover rounded">
+                            <a class="nav-link text-white" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <div class="input-group-append">
+                            <button href="#" class="btn input-group-text btn-light border border-1">
+                                <i class="fa-solid fa-magnifying-glass p-1 text-dark"></i> <!-- Search icon -->
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero text-white py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4">Unlock Your Learning Potential</h1>
+                    <p class="lead">Explore a world of knowledge and skills with our online courses. Learn at your own
+                        pace, anytime, anywhere with <b class="sageskill rounded-1 p-1 fst-italic">SageSkill.</b></p>
+                    <a href="#" class="btn btn-lg border-0 shadow mb-2">Get Started</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="/assets/pexels-max-fischer-5212700.jpg" alt="Hero Image"
+                        class="img-fluid rounded-2 shadow mt-3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carousel -->
+    <section id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner shadow-lg rounded-5">
+            <div class="carousel-item active" data-bs-interval="4000">
+                <img src="/assets/elisa-calvet-b-S3nUOqDmUvc-unsplash.jpg" class="d-block w-100 img-fluid"
+                    alt="Slide 1">
+                <div class="carousel-caption justify-content-center">
+                    <h1>Discover Our Courses!</h1>
+                    <p>Explore a variety of online courses.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <img src="/assets/annie-spratt-4E1JOFK55kc-unsplash.jpg" class="d-block w-100 img-fluid" alt="Slide 2">
+                <div class="carousel-caption">
+                    <h1>Learn Anytime, Anywhere</h1>
+                    <p>Access courses on your schedule.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <img src="/assets/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg" class="d-block w-100 img-fluid"
+                    alt="Slide 3">
+                <div class="carousel-caption">
+                    <h1>Join Our Community</h1>
+                    <p>Join thousands of learners worldwide.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </section>
+
+    <!-- Course Listings -->
+    <section class="course-listings mt-3">
+        <div class="container">
+            <h2 class="text-white display-6 fw-normal">Featured Courses</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 shadow-lg">
+                        <img src="/assets/English_Course.JPG" class="card-img-top course-thumbnail" alt="Course 1">
+                        <div class="card-body">
+                            <h5 class="card-title">English Course</h5>
+                            <p class="card-text">
+                                Master English language proficiency with our engaging course. From beginners to advanced
+                                learners, explore grammar, vocabulary, and practical communication. Gain confidence in
+                                speaking, writing, and understanding English. Join our diverse community of learners and
+                                open doors to better communication and exciting career opportunities.
+                            </p>
+                            <a href="#" class="btn float-end border-0">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 shadow-lg">
+                        <img src="/assets/Physics_Course.JPG" class="card-img-top course-thumbnail" alt="Course 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Physics Course</h5>
+                            <p class="card-text">
+                                Delve into the fascinating world of physics with our comprehensive Physics course. From
+                                classical mechanics to modern quantum physics, this course covers it all. Explore the
+                                laws of the universe, conduct experiments, and understand the fundamental principles
+                                that govern our world. Join us in unlocking the secrets of the physical universe and
+                                unravel them.
+                            </p>
+                            <a href="#" class="btn float-end border-0">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 shadow-lg">
+                        <img src="/assets/Math_Course.JPG" class="card-img-top course-thumbnail" alt="Course 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Mathematics Course</h5>
+                            <p class="card-text">
+                                Dive into the fascinating world of numbers, equations, and problem-solving with our
+                                Mathematics course. Whether you're a student, professional, or lifelong learner, this
+                                course offers a solid foundation in math. Explore algebra, calculus, geometry, and more.
+                                Enhance your critical thinking and problem-solving skills to excel in various fields.
+                            </p>
+                            <a href="#" class="btn float-end border-0">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 shadow-lg">
+                        <img src="/assets/Urdu_Course.JPG" class="card-img-top course-thumbnail" alt="Course 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Urdu Course</h5>
+                            <p class="card-text">
+                                Discover the richness of the Urdu language and culture with our Urdu course. From
+                                language fundamentals to Urdu literature, this course offers a journey through the heart
+                                of South Asia. Learn to read, write, and speak Urdu fluently. Immerse yourself in the
+                                beauty of Urdu poetry and prose, and connect with the rich heritage of the Urdu-speaking
+                                world.
+                            </p>
+                            <a href="#" class="btn float-end border-0">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 shadow-lg">
+                        <img src="/assets/History_Course.JPG" class="card-img-top course-thumbnail" alt="Course 5">
+                        <div class="card-body">
+                            <h5 class="card-title">History Course</h5>
+                            <p class="card-text">
+                                Travel through time and explore the stories of the past with our History course. From
+                                ancient civilizations to modern revolutions, this course offers a captivating journey
+                                through human history. Dive into the events, figures, and cultures that shaped our
+                                world. Gain a deeper understanding of the past and its impact on our present.
+                            </p>
+                            <a href="#" class="btn float-end border-0">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 shadow-lg">
+                        <img src="/assets/Chemistry_Course.JPG" class="card-img-top course-thumbnail" alt="Course 6">
+                        <div class="card-body">
+                            <h5 class="card-title">Chemistry Course</h5>
+                            <p class="card-text">
+                                Dive into the world of molecules, elements, and reactions with our engaging Chemistry
+                                course. Whether you're a budding scientist or simply curious, this course offers a solid
+                                foundation. Explore the periodic table, chemical reactions, laboratory techniques, and
+                                discover the practical applications of chemistry in our daily lives.
+                            </p>
+                            <a href="#" class="btn float-end border-0">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress Bars -->
+    <section class="bg-progress">
+        <div class="progress-container">
+            <div class="row mx-2">
+                <!-- Progress Bar 1 -->
+                <div class="col-lg-8 col-md-7 col-sm-12 mt-3">
+                    <div class="card border-0 progress-bg">
+                        <div class="card-body">
+                            <h4 class="card-title">English Course Progress</h4>
+                            <p class="card-text fs-5">You've completed 25% of the course.</p>
+                            <div class="progress mt-3">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info w-25"
+                                    role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5 col-sm-12 mt-3">
+                    <a class="card btn border-0 w-75 mx-auto" href="#">
+                        <div class="card-body">
+                            <i class="fa-brands fa-readme fa-4x icon-progress-bar"></i>
+                            <p class="card-text fs-6 fw-bold">Click here to Continue!</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Progress Bar 2 -->
+                <div class="col-lg-8 col-md-7 col-sm-12 mt-3">
+                    <div class="card border-0 progress-bg">
+                        <div class="card-body">
+                            <h4 class="card-title">Physics Course Progress</h4>
+                            <p class="card-text fs-5">You've completed 50% of the course.</p>
+                            <div class="progress mt-3">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info w-50"
+                                    role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5 col-sm-12 mt-3">
+                    <a class="card btn border-0 w-75 mx-auto" href="#">
+                        <div class="card-body">
+                            <i class="fa-brands fa-readme fa-4x icon-progress-bar"></i>
+                            <p class="card-text fs-6 fw-bold">Click here to Continue!</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Progress Bar 3 -->
+                <div class="col-lg-8 col-md-7 col-sm-12 mt-3">
+                    <div class="card border-0 progress-bg">
+                        <div class="card-body">
+                            <h4 class="card-title">History Course Progress</h4>
+                            <p class="card-text fs-5">You've completed 75% of the course.</p>
+                            <div class="progress mt-3">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info w-75"
+                                    role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5 col-sm-12 mt-3">
+                    <a class="card btn border-0 w-75 mx-auto" href="#">
+                        <div class="card-body">
+                            <i class="fa-brands fa-readme fa-4x icon-progress-bar"></i>
+                            <p class="card-text fw-bold">Click here to Continue!</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Progress Bar 4 -->
+                <div class="col-lg-8 col-md-7 col-sm-12 mt-3">
+                    <div class="card border-0 progress-bg">
+                        <div class="card-body">
+                            <h4 class="card-title">Chemistry Course Progress</h4>
+                            <p class="card-text fs-5">You've completed 100% of the course.</p>
+                            <div class="progress mt-3">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info w-100"
+                                    role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">100%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5 col-sm-12 mt-3">
+                    <a class="card btn border-0 w-75 mx-auto" href="#">
+                        <div class="card-body">
+                            <i class="fa-brands fa-readme fa-4x icon-progress-bar"></i>
+                            <p class="card-text fw-bold">Choose another course!</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accordions -->
+    <section class="accordions mt-3">
+        <div class="container-fluid">
+            <div class="row">
+                <h2 class="text-center text-white">FAQs</h2>
+                <!-- Accordion Left -->
+                <div class="col-md-6">
+                    <div class="accordion" id="accordion-left">
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed accordion-bg fs-5" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    <strong>Question 1:</strong>&nbsp;What is the square root of 144?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse accordion-bg"
+                                data-bs-parent="#accordion-left">
+                                <div class="accordion-body">
+                                    <strong>Answer 1:</strong> The square root of 144 is a number that,
+                                    when multiplied by itself, equals 144. In this case, the square root is 12 because
+                                    12 x 12 = 144.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed accordion-bg fs-5" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    <strong>Question 2:</strong>&nbsp;What is Newton's first law of motion?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse accordion-bg"
+                                data-bs-parent="#accordion-left">
+                                <div class="accordion-body">
+                                    <strong>Answer 2:</strong> Newton's first law of motion, often called the
+                                    law of inertia, states that
+                                    an object at rest will remain at rest, and an object in motion will
+                                    stay in motion unless acted upon by an external force. In other words, an object
+                                    will maintain its
+                                    state of motion unless something causes it to change.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed accordion-bg fs-5" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    <strong>Question 3:</strong>&nbsp;What is the Urdu translation of the word "book"?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse accordion-bg"
+                                data-bs-parent="#accordion-left">
+                                <div class="accordion-body">
+                                    <strong>Answer 2:</strong> The Urdu translation of the word "book" is
+                                    "کتاب" (kitab). This term is
+                                    commonly used in Urdu to refer to a book or written publication.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accordion Right -->
+                <div class="col-md-6">
+                    <div class="accordion" id="accordion-right">
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed accordion-bg fs-5" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true"
+                                    aria-controls="collapseFour">
+                                    <strong>Question 4:</strong>&nbsp;What is a simile in literature?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse accordion-bg"
+                                data-bs-parent="#accordion-right">
+                                <div class="accordion-body">
+                                    <strong>Answer 4:</strong> A simile is a figure of speech used in
+                                    literature to make a comparison
+                                    between two unlike things, often using the words "like" or "as." For example, the
+                                    phrase "Her smile was as bright as the sun" is a simile because it compares the
+                                    brightness of the smile to the brightness of the sun.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed accordion-bg fs-5" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                                    aria-controls="collapseFive">
+                                    <strong>Question 5:</strong>&nbsp;What year did World War II end?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse accordion-bg"
+                                data-bs-parent="#accordion-right">
+                                <div class="accordion-body">
+                                    <strong>Answer 5:</strong> World War II ended in 1945. The war
+                                    concluded in Europe on May 8, 1945,
+                                    when Germany surrendered, and it ended in the Pacific on
+                                    September 2, 1945, after Japan surrendered.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed accordion-bg fs-5" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
+                                    aria-controls="collapseSix">
+                                    <strong>Question 6:</strong>&nbsp;What is a chemical reaction, and how is it
+                                    represented?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse accordion-bg"
+                                data-bs-parent="#accordion-right">
+                                <div class="accordion-body">
+                                    <strong>Answer 6:</strong> A chemical reaction is a process in which one or more
+                                    substances
+                                    (reactants) undergo a transformation to produce one or more different
+                                    substances
+                                    (products). Chemical reactions are typically represented using
+                                    chemical equations.
+                                    For example, the combustion of methane can be represented as: <br>
+                                    CH₄ (methane) + 2O₂ (oxygen) → CO₂ (carbon dioxide) + 2H₂O (water)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-light mt-3 p-3">
+        <div class="container-fluid bg-footer rounded-4 p-5 shadow">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <h4>About Us</h4>
+                    <p class="mt-3">Welcome to <i class="sageskill p-1 rounded-1">SageSkill</i>, where we empower
+                        diverse learners with accessible education.</p>
+                    <p>Our e-learning platform offers diverse courses, empowering students, professionals, and
+                        inquisitive minds.</p>
+                    <p>Join us on a transformative journey of knowledge, skill development, and personal growth at <i
+                            class="sageskill p-1 rounded-1">SageSkill.</i></p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h4>Quick Links</h4>
+                    <ul class="list-unstyled mt-3">
+                        <li class="mt-2"><a href="#" class="text-decoration-none fs-5 text-white"><i
+                                    class="fa-solid fa-house"></i>
+                                &nbsp;Home</a></li>
+                        <li class="mt-2"><a href="#" class="text-decoration-none fs-5 text-white"><i
+                                    class="fa-solid fa-book"></i>
+                                &nbsp;Courses</a></li>
+                        <li class="mt-2"><a href="#" class="text-decoration-none fs-5 text-white"><i
+                                    class="fa-solid fa-right-to-bracket"></i> &nbsp;Login</a></li>
+                        <li class="mt-2"><a href="#" class="text-decoration-none fs-5 text-white"><i
+                                    class="fa-solid fa-user-plus"></i> &nbsp;Register</a></li>
+                        <li class="mt-2"><a href="#" class="text-decoration-none fs-5 text-white"><i
+                                    class="fa-solid fa-info"></i>
+                                &nbsp;About Us</a></li>
+                        <li class="mt-2"><a href="#" class="text-decoration-none fs-5 text-white"><i
+                                    class="fa-solid fa-phone"></i>
+                                &nbsp;Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h4 class="mt-3">Contact Us</h4>
+                    <address>
+                        123 Learning Street <br>
+                        City, Country <br>
+                        Email: info@yourwebsite.com <br>
+                        Phone: +1 (123) 456-7890 <br><br>
+                        <i class="fa-brands fa-google fa-2x"></i>&nbsp;&nbsp;
+                        <i class="fa-brands fa-facebook fa-2x"></i>&nbsp;&nbsp;
+                        <i class="fa-brands fa-twitter fa-2x"></i>&nbsp;&nbsp;
+                        <i class="fa-brands fa-instagram fa-2x"></i>&nbsp;&nbsp;
+                    </address>
+                </div>
+                <h5 class="text-center">
+                    &copy;SkillSage<sup>tm</sup> All rights reserved. <br>
+                    Created by <b>NinjaCodeSage</b>.
+                </h5>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS CDN Links -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
