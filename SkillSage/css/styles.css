@@ -1,0 +1,41 @@
+body {
+    background: linear-gradient(135deg, #7CB9E8, #F0F8FF);
+}
+
+.navbar-bg {
+    background-color: #6CB4EE;
+}
+
+.hero .btn:hover, .sageskill, .course-listings .btn:hover, .nav-hover:hover, .progress-container .btn:hover {
+    background-color: #72A0C1;
+}
+
+.hero .btn, .course-listings .btn {
+    background-color: #73C2FB;
+}
+
+.hero img {
+    opacity: 0.6;
+}
+
+.carousel {
+    opacity: 0.8;
+}
+
+.course-listings .card-body, .progress-container .progress-bg, .accordions .accordion-bg {
+    background: linear-gradient(135deg, #6CB4EE, #B9D9EB);
+}
+
+.course-thumbnail {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.icon-progress-bar {
+    color: #1ca9c9;
+}
+
+.bg-footer {
+    background: linear-gradient(135deg, #3E8EDE, #4682B4);
+}
